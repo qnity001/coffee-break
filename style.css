@@ -6,4 +6,85 @@ body {
     transition: background-color 0.5s ease;
 }
 
+.header-container,
+.footer {
+    height: 80px;
+}
 
+.header,
+.content {
+    width: 1200px;
+}
+
+.header-container,
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3E2723;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 32px;
+    color: white;
+    font-weight: 800;
+}
+
+a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+}
+
+.footer {
+    margin-top: auto;
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700 px;
+}
+
+.content {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 36px;
+    color:#3E2723;
+    font-weight: 900;
+    gap: 20px;
+}
+
+.coffee {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    
+}
