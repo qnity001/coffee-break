@@ -1,0 +1,9 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: #E3C8A8;
+    transition: background-color 0.5s ease;
+}
+
+
