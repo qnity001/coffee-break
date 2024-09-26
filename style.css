@@ -37,6 +37,7 @@ body {
 .logo {
     display: flex;
     align-items: center;
+    gap: 3px;
     font-family: 'Satisfy', Arial;
     font-size: 32px;
     color: #EDE1D4;
@@ -44,7 +45,7 @@ body {
 }
 
 .logo img {
-    width: 13%;
+    width: 10%;
 }
 
 .menu {
