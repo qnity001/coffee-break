@@ -118,6 +118,10 @@ ul {
     transition: opacity 0.3s ease;
 }
 
+.mocha img {
+    width: 100%;
+}
+
 .caption {
     font-size: 28px;
     font-weight: 800;
@@ -139,6 +143,8 @@ ul {
     font-family: 'Playpen Sans';
     box-sizing: border-box;
     border-radius: 40px;
+    border: solid 5px;
+    border-color: #3E2723;
     flex-shrink: 0;
     font-weight: bold;
     padding: 5px 50px;
@@ -147,4 +153,12 @@ ul {
     background: #3E2723;
     color: #EDE1D4;
     margin-top: 30px;
+    transition: background-color 0.3s;
+    
+}
+
+.brew:hover {
+    cursor: pointer;
+    background-color: #E3C8A8;
+    color: #3E2723;
 }
