@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Playpen+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playpen+Sans|Satisfy&display=swap');
 
 body {
     display: flex;
@@ -35,9 +35,10 @@ body {
 }
 
 .logo {
-    font-size: 26px;
+    font-family: 'Satisfy', Arial;
+    font-size: 32px;
     color: #EDE1D4;
-    font-weight: 900;
+    font-weight: 100;
 }
 
 a {
