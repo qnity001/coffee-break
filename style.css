@@ -35,10 +35,21 @@ body {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
     font-family: 'Satisfy', Arial;
     font-size: 32px;
     color: #EDE1D4;
     font-weight: 100;
+}
+
+.logo img {
+    width: 13%;
+}
+
+.menu {
+    display: flex;
+    flex-shrink: 0;
 }
 
 a {
@@ -47,8 +58,10 @@ a {
     text-decoration: none;
 }
 
+
 ul {
     display: flex;
+    flex-shrink: 0;
     align-items: center;
     gap: 40px;
     list-style-type: none;
