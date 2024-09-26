@@ -5,9 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Coffee Break</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
     </head>
 
     <body>
+
+        <div id="bg"></div>
 
         <div class="header-container">
             <div class="header">
@@ -22,79 +25,75 @@
                 </div>
             </div>
         </div>
-
         
-        
-            <div class="content">
-                <div class="coffee">
+        <div class="content">
+            <div class="coffee">
 
-                    <div class="card">
-                        <div class="box">
-                            <img src="coffee/latte.png" alt="a picture of latte">
-                        </div>
-                        <div class="caption">Need to relax?</div>
-                        <div class="subtext">
-                            A soothing latte can help you ease your mind.
-                        </div>
+                <div class="card latte" onmouseenter="changeBackground('#C5A688')" onmouseout="resetBackground()">
+                    <div class="box">
+                        <img src="coffee/latte.png" alt="a picture of latte">
                     </div>
-
-                    <div class="card">
-                        <div class="box">
-                            <img src="coffee/decaf.png" alt="a picture of decaf">
-                        </div>
-                        <div class="caption">Wanna Unwind?</div>
-                        <div class="subtext">
-                            Embrace the calm with decaf - perfect for self reflection.
-                        </div>
+                    <div class="caption">Need to relax?</div>
+                    <div class="subtext">
+                        A soothing latte can help you ease your mind.
                     </div>
-
-                    <div class="card">
-                        <div class="box">
-                            <img src="coffee/capuccino.png" alt="a picture of capuccino">
-                        </div>
-                        <div class="caption">Overwhelmed?</div>
-                        <div class="subtext">
-                            Let a cappuccino offer you some balance and comfort.
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="box">
-                            <img src="coffee/cold-brew.png" alt="a picture of cold brew">
-                        </div>
-                        <div class="caption">Feeling bored?</div>
-                        <div class="subtext">
-                            Refreshen up and energise your senses with a cold brew.
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="box">
-                            <img src="coffee/mocha.png" alt="a picture of mocha">
-                        </div>
-                        <div class="caption">Conflicted?</div>
-                        <div class="subtext">
-                            Indulge in a mocha to clear your mind.
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="box">
-                            <img src="coffee/espresso.png" alt="a picture of espresso">
-                        </div>
-                        <div class="caption">Feeling intense?</div>
-                        <div class="subtext">
-                            Have a shot of espresso to power through.
-                        </div>
-                    </div>
-
-                    
-                    
                 </div>
-                <button class="brew">Brew a Chat</button>
+
+                <div class="card decaf" onmouseenter="changeBackground('#A67B5B')" onmouseout="resetBackground()">
+                    <div class="box">
+                        <img src="coffee/decaf.png" alt="a picture of decaf">
+                    </div>
+                    <div class="caption">Wanna Unwind?</div>
+                    <div class="subtext">
+                        Embrace the calm with decaf - perfect for self reflection.
+                    </div>
+                </div>
+
+                <div class="card cappuccino" onmouseenter="changeBackground('#d3b58f')" onmouseout="resetBackground()">
+                    <div class="box">
+                        <img src="coffee/capuccino.png" alt="a picture of capuccino">
+                    </div>
+                    <div class="caption">Overwhelmed?</div>
+                    <div class="subtext">
+                        Let a cappuccino offer you some balance and comfort.
+                    </div>
+                </div>
+
+                <div class="card cold-brew" onmouseenter="changeBackground('#3A2C29')" onmouseout="resetBackground()">
+                    <div class="box">
+                        <img src="coffee/cold-brew.png" alt="a picture of cold brew">
+                    </div>
+                    <div class="caption">Feeling bored?</div>
+                    <div class="subtext">
+                        Refreshen up and energise your senses with a cold brew.
+                    </div>
+                </div>
+
+                <div class="card mocha" onmouseenter="changeBackground('#6F4E37')" onmouseout="resetBackground()">
+                    <div class="box">
+                        <img src="coffee/mocha.png" alt="a picture of mocha">
+                    </div>
+                    <div class="caption">Conflicted?</div>
+                    <div class="subtext">
+                        Indulge in a mocha to clear your mind.
+                    </div>
+                </div>
+
+                <div class="card espresso" onmouseenter="changeBackground('#4B2E20')" onmouseout="resetBackground()">
+                    <div class="box">
+                        <img src="coffee/espresso.png" alt="a picture of espresso">
+                    </div>
+                    <div class="caption">Feeling intense?</div>
+                    <div class="subtext">
+                        Have a shot of espresso to power through.
+                    </div>
+                </div>
+
+                    
+                    
             </div>
-
-
+            <button class="brew">Brew a Chat</button>
+        </div>
 
         <div class="footer">
             Copyright &copy Coffee Break 2024

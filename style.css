@@ -4,8 +4,8 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background: #E3C8A8;
-    transition: background-color 0.5s ease;
+    background-color: #E3C8A8;
+    transition: background-color 1s ease;
     font-family: 'Playpen Sans', 'Times New Roman', Arial;
 }
 
@@ -61,8 +61,6 @@ ul {
     font-size: 24px;
 }
 
-
-
 .content {
     height: 700 px;
     padding: 100px 0px;
@@ -91,6 +89,19 @@ ul {
     justify-content: center;
     align-items: center;
     width: 350px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transition: transform 0.5s ease;
+    transform: scale(1.05);
+}
+
+.cold-brew:hover .mocha:hover .espresso:hover {
+    color: #E3C8A8;
 }
 
 .box {
@@ -105,9 +116,10 @@ ul {
 }
 
 .box img {
-    width: 80%;
+    width: 90%;
     object-fit: cover;
     align-self: center;
+    transition: opacity 0.3s ease;
 }
 
 .caption {
@@ -132,4 +144,5 @@ ul {
     font-size: 36px;
     background: #3E2723;
     color: white;
+    margin-top: 30px;
 }
