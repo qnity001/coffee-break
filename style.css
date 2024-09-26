@@ -16,7 +16,7 @@ body {
 
 .header,
 .content {
-    width: 900px;
+    width: 1000px;
 }
 
 .header-container,
@@ -34,13 +34,13 @@ body {
 }
 
 .logo {
-    font-size: 32px;
+    font-size: 28px;
     color: #EDE1D4;
-    font-weight: 800;
+    font-weight: 900;
 }
 
 a {
-    font-size: 24px;
+    font-size: 20px;
     color: #EDE1D4;
     text-decoration: none;
 }
@@ -51,7 +51,7 @@ ul {
     gap: 40px;
     list-style-type: none;
     margin: 0px;
-    padding: 0;
+    padding: 0px;
 }
 
 .footer {
@@ -63,7 +63,7 @@ ul {
 
 .content {
     height: 500px;
-    padding: 800px 0px;
+    margin: 200px 0px;
     display: flex;
     align-self: center;
     flex-direction: column;
@@ -88,7 +88,8 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    max-width: 250px;
+    min-height: 240px;
     transition: transform 0.5s ease;
     cursor: pointer;
     position: relative;
@@ -105,14 +106,14 @@ ul {
     justify-content: center;
     align-items: center;
     align-self: center;
-    width: 100px;
-    height: 180px;
+    max-width: 100px;
+    max-height: 180px;
     margin-bottom: 20px;
     flex-shrink: 0;
 }
 
 .box img {
-    width: 50%;
+    width: 100%;
     object-fit: cover;
     align-self: center;
     transition: opacity 0.3s ease;
@@ -120,16 +121,16 @@ ul {
 
 .mocha img,
 .espresso img {
-    width: 60%;
+    width: 100%;
 }
 
 .caption {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 800;
 }
 
 .subtext {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 500;
     align-self: center;
 }
@@ -144,13 +145,13 @@ ul {
     font-family: 'Playpen Sans';
     box-sizing: border-box;
     border-radius: 40px;
-    border: solid 5px;
+    border: solid 3px;
     border-color: #3E2723;
     flex-shrink: 0;
     font-weight: bold;
-    padding: 5px 50px;
+    padding: 5px 30px;
     align-self: center;
-    font-size: 36px;
+    font-size: 28px;
     background: #3E2723;
     color: #EDE1D4;
     margin-top: 30px;
