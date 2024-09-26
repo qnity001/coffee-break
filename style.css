@@ -4,6 +4,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    justify-content: center;
     background-color: #E3C8A8;
     transition: background-color 1s ease;
     font-family: 'Playpen Sans', 'Times New Roman', Arial;
@@ -11,12 +12,13 @@ body {
 
 .header-container,
 .footer {
-    height: 100px;
+    height: 70px;
 }
 
 .header,
 .content {
     width: 1000px;
+    align-self: center;
 }
 
 .header-container,
@@ -40,7 +42,7 @@ body {
 }
 
 a {
-    font-size: 20px;
+    font-size: 22px;
     color: #EDE1D4;
     text-decoration: none;
 }
@@ -54,16 +56,9 @@ ul {
     padding: 0px;
 }
 
-.footer {
-    margin-top: auto;
-    color: #EDE1D4;
-    font-weight: 500;
-    font-size: 24px;
-}
-
 .content {
     height: 500px;
-    margin: 200px 0px;
+    margin: 100px 0px;
     display: flex;
     align-self: center;
     flex-direction: column;
@@ -88,7 +83,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 250px;
+    max-width: 280px;
     min-height: 240px;
     transition: transform 0.5s ease;
     cursor: pointer;
@@ -114,14 +109,15 @@ ul {
 
 .box img {
     width: 100%;
-    object-fit: cover;
+    height: 105px;
+    object-fit: fill;
     align-self: center;
     transition: opacity 0.3s ease;
 }
 
 .mocha img,
 .espresso img {
-    width: 100%;
+    width: 110%;
 }
 
 .caption {
@@ -163,4 +159,11 @@ ul {
     cursor: pointer;
     background-color: #E3C8A8;
     color: #3E2723;
+}
+
+.footer {
+    margin-top: auto;
+    color: #EDE1D4;
+    font-weight: 500;
+    font-size: 20px;
 }
