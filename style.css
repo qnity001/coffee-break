@@ -105,14 +105,14 @@ ul {
     justify-content: center;
     align-items: center;
     align-self: center;
-    width: 250px;
-    height: 200px;
+    width: 100px;
+    height: 180px;
     margin-bottom: 20px;
     flex-shrink: 0;
 }
 
 .box img {
-    width: 90%;
+    width: 50%;
     object-fit: cover;
     align-self: center;
     transition: opacity 0.3s ease;
@@ -120,7 +120,7 @@ ul {
 
 .mocha img,
 .espresso img {
-    width: 100%;
+    width: 60%;
 }
 
 .caption {
