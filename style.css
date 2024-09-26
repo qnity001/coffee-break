@@ -35,13 +35,13 @@ body {
 
 .logo {
     font-size: 32px;
-    color: white;
+    color: #EDE1D4;
     font-weight: 800;
 }
 
 a {
     font-size: 24px;
-    color: white;
+    color: #EDE1D4;
     text-decoration: none;
 }
 
@@ -56,7 +56,7 @@ ul {
 
 .footer {
     margin-top: auto;
-    color: white;
+    color: #EDE1D4;
     font-weight: 500;
     font-size: 24px;
 }
@@ -100,10 +100,6 @@ ul {
     transform: scale(1.05);
 }
 
-.cold-brew:hover .mocha:hover .espresso:hover {
-    color: #E3C8A8;
-}
-
 .box {
     display:flex;
     justify-content: center;
@@ -133,6 +129,12 @@ ul {
     align-self: center;
 }
 
+.cold-brew:hover,
+.mocha:hover,
+.espresso:hover {
+    color: #EDE1D4;
+}
+
 .brew {
     font-family: 'Playpen Sans';
     box-sizing: border-box;
@@ -143,6 +145,6 @@ ul {
     align-self: center;
     font-size: 36px;
     background: #3E2723;
-    color: white;
+    color: #EDE1D4;
     margin-top: 30px;
 }
