@@ -118,7 +118,8 @@ ul {
     transition: opacity 0.3s ease;
 }
 
-.mocha img {
+.mocha img,
+.espresso img {
     width: 100%;
 }
 
