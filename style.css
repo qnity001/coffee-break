@@ -10,8 +10,7 @@ body {
     font-family: 'Playpen Sans', 'Times New Roman', Arial;
 }
 
-.header-container,
-.footer {
+.header-container {
     height: 70px;
 }
 
@@ -162,8 +161,9 @@ ul {
 }
 
 .footer {
+    height: 50px;
     margin-top: auto;
     color: #EDE1D4;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 14px;
 }
