@@ -6,7 +6,7 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: #E3C8A8;
-    transition: background-color 1s ease;
+    transition: background-color 0.6s ease;
     font-family: 'Playpen Sans', 'Times New Roman', Arial;
 }
 
@@ -44,8 +44,22 @@ body {
     font-weight: 100;
 }
 
+.logo2 {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: #EDE1D4;
+    text-decoration: none;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
 .logo img {
-    width: 10%;
+    width: 15%;
 }
 
 .menu {
@@ -53,10 +67,8 @@ body {
     flex-shrink: 0;
 }
 
-a {
+.menu a {
     font-size: 20px;
-    color: #EDE1D4;
-    text-decoration: none;
 }
 
 
@@ -122,8 +134,7 @@ ul {
 }
 
 .box img {
-    width: 100%;
-    height: 105px;
+    width: 120%;
     object-fit: fill;
     align-self: center;
     transition: opacity 0.3s ease;
@@ -131,7 +142,7 @@ ul {
 
 .mocha img,
 .espresso img {
-    width: 110%;
+    width: 115%;
 }
 
 .caption {
