@@ -110,10 +110,6 @@ ul {
     align-items: center;
     max-width: 280px;
     min-height: 240px;
-    transition: transform 0.8s ease;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
 }
 
 .card:hover {
