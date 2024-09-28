@@ -37,14 +37,15 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    gap: 3px;
+    gap: 2px;
     font-family: 'Satisfy', Arial;
     font-size: 32px;
     color: #EDE1D4;
     font-weight: 100;
+    max-width: 40%;
 }
 
-.logo2 {
+.pic {
     display: flex;
     align-items: center;
 }
@@ -52,14 +53,12 @@ body {
 a {
     color: #EDE1D4;
     text-decoration: none;
-}
-
-.logo:hover {
-    cursor: pointer;
+    margin: 0;
+    padding: 0;
 }
 
 .logo img {
-    width: 15%;
+    width: 20%;
 }
 
 .menu {
@@ -70,7 +69,6 @@ a {
 .menu a {
     font-size: 20px;
 }
-
 
 ul {
     display: flex;
@@ -138,6 +136,7 @@ ul {
     object-fit: fill;
     align-self: center;
     transition: opacity 0.3s ease;
+    padding-left: 12px;
 }
 
 .mocha img,
@@ -154,12 +153,6 @@ ul {
     font-size: 18px;
     font-weight: 500;
     align-self: center;
-}
-
-.cold-brew:hover,
-.mocha:hover,
-.espresso:hover {
-    color: #EDE1D4;
 }
 
 .brew {
