@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Playpen+Sans|Satisfy&display=swap');
+
+body {   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #E3C8A8;
+    font-family: 'Playpen Sans', 'Times New Roman', Arial;
+}
+
+.header-container {
+    height: 70px;
+}
+
+.header {
+    width: 1000px;
+    align-self: center;
+}
+
+.header-container,
+.footer {
+    display: flex;
+    justify-content: center;
+    
+}
