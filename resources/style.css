@@ -1,1 +1,87 @@
 @import url('https://fonts.googleapis.com/css?family=Playpen+Sans|Satisfy&display=swap');
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #E3C8A8;
+    font-family: 'Playpen Sans', 'Times New Roman', Arial;
+}
+
+.header-container {
+    height: 70px;
+}
+
+.header-container,
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3E2723;
+}
+
+.header {
+    width: 1000px;
+    align-self: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-family: 'Satisfy', Arial;
+    font-size: 32px;
+    color: #EDE1D4;
+    font-weight: 100;
+    max-width: 40%;
+}
+
+.pic {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: #EDE1D4;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    width: 20%;
+}
+
+.menu {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.menu a {
+    font-size: 20px;
+}
+
+ul {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 40px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer {
+    height: 50px;
+    margin-top: auto;
+    color: #EDE1D4;
+    font-weight: 500;
+    font-size: 14px;
+}
