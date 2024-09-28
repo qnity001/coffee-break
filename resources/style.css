@@ -22,5 +22,39 @@ body {
 .footer {
     display: flex;
     justify-content: center;
-    
+    align-items: center;
+    background: #3E2723;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.menu a {
+    font-size: 20px;
+}
+
+ul {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 40px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer {
+    height: 50px;
+    margin-top: auto;
+    color: #EDE1D4;
+    font-weight: 500;
+    font-size: 14px;
 }
