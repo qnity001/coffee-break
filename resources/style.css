@@ -17,7 +17,7 @@ body {
 .meditation-section,
 .youtube-section,
 .helpline-section {
-    height: 450px;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,6 +29,12 @@ body {
     align-self: center;
     flex: display;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-cards {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -135,14 +141,25 @@ h1 {
 }
 
 .card {
-    width: 220px;
+    width: 250px;
     height: 300px;
     border: solid 3px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 3px;
+}
+
+.books .card {
+    display: flex;
+    flex-direction: row;
+    width: 450px;
+    height: 175px;
+}
+
+.books .card-text {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
 }
 
 .helpline .card {
@@ -151,9 +168,9 @@ h1 {
 
 .card-image {
     box-sizing: border-box;
-    margin: 3px;
+    margin: 5px;
     border: solid 1px;
-    height: 180px;
+    height: 170px;
 }
 
 .card-title {
@@ -167,7 +184,20 @@ h1 {
 }
 
 .card-link {
+    margin-left: 3px;
+    align-self: flex-start;
     font-size: 14px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.card-link a {
+
+    font-size: 14px;
+    color: black;
 }
 
 .footer {
