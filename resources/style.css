@@ -13,7 +13,10 @@ body {
     height: 70px;
 }
 
-.books-section {
+.books-section,
+.meditation-section,
+.youtube-section,
+.helpline-section {
     height: 400px;
 }
 
@@ -31,7 +34,10 @@ body {
 }
 
 .introduction,
-.books {
+.books,
+.meditation,
+.youtube,
+.helpline {
     width: 980px;
     align-self: center;
 }
@@ -93,10 +99,25 @@ h1 {
     font-size: 18px;
 }
 
-.books {
+.introduction {
+    margin-bottom: 20px;
+}
+
+.books-section {
     background-color: #D3B58F;
 }
 
+.meditation-section {
+    background-color: #C5A688;
+}
+
+.youtube-section {
+    background-color: #A67B5B;
+}
+
+.helpline-section {
+    background-color: #E3C8A8;
+}
 
 .footer {
     height: 50px;
