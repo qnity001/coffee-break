@@ -13,6 +13,10 @@ body {
     height: 70px;
 }
 
+.books-section {
+    height: 400px;
+}
+
 .header-container,
 .footer {
     display: flex;
@@ -23,6 +27,12 @@ body {
 
 .header {
     width: 1000px;
+    align-self: center;
+}
+
+.introduction,
+.books {
+    width: 980px;
     align-self: center;
 }
 
@@ -53,6 +63,7 @@ a {
     text-decoration: none;
     margin: 0;
     padding: 0;
+    font-size: 20px;
 }
 
 .logo img {
@@ -64,10 +75,6 @@ a {
     flex-shrink: 0;
 }
 
-.menu a {
-    font-size: 20px;
-}
-
 ul {
     display: flex;
     flex-shrink: 0;
@@ -77,6 +84,19 @@ ul {
     margin: 0px;
     padding: 0px;
 }
+
+h1 {
+    font-size: 28px;
+}
+
+.heading-text {
+    font-size: 18px;
+}
+
+.books {
+    background-color: #D3B58F;
+}
+
 
 .footer {
     height: 50px;
