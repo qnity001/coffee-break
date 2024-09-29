@@ -159,7 +159,8 @@ h1 {
 .books .card-text {
     display: flex;
     flex-direction: column;
-    margin: 5px;
+    margin: 8px;
+    gap: 3px;
 }
 
 .helpline .card {
@@ -171,12 +172,23 @@ h1 {
     margin: 5px;
     border: solid 1px;
     height: 170px;
+    display: flex;
+}
+
+.books .card-image {
+    height: 170px;
+    width: 135px;
+    flex-shrink:0;
 }
 
 .card-title {
     font-size: 16px;
     font-weight: 800;
     text-align: center;
+}
+
+.books .card-title {
+    text-align: left;
 }
 
 .card-subtext {
