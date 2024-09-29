@@ -136,7 +136,7 @@ h1 {
 
 .card {
     width: 220px;
-    height: 280px;
+    height: 300px;
     border: solid 3px;
     display: flex;
     flex-direction: column;
@@ -149,11 +149,13 @@ h1 {
     box-sizing: border-box;
     margin: 3px;
     border: solid 1px;
-    height: 200px;
+    height: 180px;
 }
 
 .card-title {
     font-size: 16px;
+    font-weight: 800;
+    text-align: center;
 }
 
 .card-subtext {
