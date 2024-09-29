@@ -145,6 +145,10 @@ h1 {
     gap: 3px;
 }
 
+.helpline .card {
+    height: 340px;
+}
+
 .card-image {
     box-sizing: border-box;
     margin: 3px;
