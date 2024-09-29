@@ -17,7 +17,20 @@ body {
 .meditation-section,
 .youtube-section,
 .helpline-section {
-    height: 400px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction,
+.section {
+    width: 980px;
+    align-self: center;
+    flex: display;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-container,
@@ -31,18 +44,6 @@ body {
 .header {
     width: 1000px;
     align-self: center;
-}
-
-.introduction,
-.books,
-.meditation,
-.youtube,
-.helpline {
-    width: 980px;
-    align-self: center;
-}
-
-.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -117,6 +118,50 @@ h1 {
 
 .helpline-section {
     background-color: #E3C8A8;
+}
+
+.section-heading {
+    font-size: 24px;
+    font-weight: 850;
+    margin-bottom: 20px;
+}
+
+.section-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 220px;
+    height: 280px;
+    border: solid 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.card-image {
+    box-sizing: border-box;
+    margin: 3px;
+    border: solid 1px;
+    height: 200px;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.card-subtext {
+    font-size: 14px;
+}
+
+.card-link {
+    font-size: 14px;
 }
 
 .footer {
