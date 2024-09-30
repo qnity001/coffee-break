@@ -64,7 +64,6 @@ body {
     align-items: center;
     gap: 2px;
     font-family: 'Satisfy', Arial;
-    font-size: 32px;
     color: #EDE1D4;
     font-weight: 100;
     max-width: 40%;
@@ -73,6 +72,7 @@ body {
 .pic {
     display: flex;
     align-items: center;
+    font-size: 32px;
 }
 
 a {
