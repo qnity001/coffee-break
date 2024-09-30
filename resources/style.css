@@ -23,6 +23,10 @@ body {
     align-items: center;
 }
 
+.meditation-section {
+    height: 500px;
+}
+
 .introduction,
 .section {
     width: 980px;
@@ -140,8 +144,12 @@ h1 {
     gap: 20px;
 }
 
+.books .section-cards {
+    gap: 30px;
+}
+
 .card {
-    width: 250px;
+    width: 220px;
     height: 300px;
     border: solid 3px;
     display: flex;
@@ -181,6 +189,11 @@ h1 {
     flex-shrink:0;
 }
 
+.meditation .card-image {
+    height: 130px;
+    flex-shrink: 0;
+}
+
 .card-title {
     font-size: 16px;
     font-weight: 800;
@@ -193,6 +206,7 @@ h1 {
 
 .card-subtext {
     font-size: 14px;
+    margin: 5px;
 }
 
 .card-link {
@@ -207,9 +221,9 @@ p {
 }
 
 .card-link a {
-
     font-size: 14px;
-    color: black;
+    color: #3E2723;
+    text-decoration: underline;
 }
 
 .footer {
