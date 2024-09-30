@@ -81,16 +81,79 @@ ul {
 }
 
 .mascot-container {
-    height: 500px;
+    height: 550px;
     background-color: #3E2723;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
+.yes-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.mascot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    flex-shrink: 0;
+}
+
+.mascot img {
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Animation for mascot */
+
+.mascot {
+    -webkit-animation: action 2.5s infinite alternate;
+    animation: action 2.5s infinite alternate;
+}
+
+@-webkit-keyframes action {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(40px);
+    }
+}
+
+@keyframes action {
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(40px);
+    }
+}
+
+/* Creating a shadow */
+
+.shadow {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background: whitesmoke;
+    opacity: 0.5;
+    -webkit-filter: blur(10px);
+    -webkit-transform: scale(1, 0.2);
+}
+
+
+
 .content {
     height: 500px;
-    margin: 100px 0px;
+    margin: 150px 0px;
     display: flex;
     align-self: center;
     flex-direction: column;
