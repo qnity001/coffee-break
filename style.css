@@ -84,7 +84,7 @@ ul {
     height: 550px;
     background-color: #3E2723;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
