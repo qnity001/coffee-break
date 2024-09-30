@@ -80,6 +80,14 @@ ul {
     padding: 0px;
 }
 
+.mascot-container {
+    height: 500px;
+    background-color: #3E2723;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .content {
     height: 500px;
     margin: 100px 0px;
