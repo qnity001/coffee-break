@@ -181,7 +181,6 @@ h1 {
 
 .card-image {
     box-sizing: border-box;
-    margin: 5px;
     border: solid 1px;
     height: 130px;
     display: flex;
@@ -189,9 +188,22 @@ h1 {
 }
 
 .books .card-image {
-    height: 170px;
+    height: 175px;
     width: 135px;
     flex-shrink:0;
+    object-fit: contain;
+}
+
+.atomic .card-image {
+    width: 120%;
+}
+
+.happy .card-image {
+    width: 90%
+}
+
+.calm .card-image {
+    background-color: #4973E4;
 }
 
 .helpline .card-image {
