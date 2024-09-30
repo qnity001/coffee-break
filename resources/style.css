@@ -153,10 +153,10 @@ h1 {
     width: 220px;
     height: 300px;
     border-radius: 20px;
+    border: 2px dotted #3E2723;
     display: flex;
     flex-direction: column;
     gap: 3px;
-    background-color: rgba(211,211,211,0.4);
 }
 
 .books .card,
@@ -181,6 +181,9 @@ h1 {
 }
 
 .card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
     border-radius: 20px;
     height: 130px;
@@ -195,16 +198,28 @@ h1 {
     object-fit: contain;
 }
 
+.books img,
+.helpline img {
+    max-width: 128px;
+    max-height: 168px;
+}
+
+.meditation img,
+.youtube img {
+    width: 210px;
+    height: 120px;
+}
+
 .atomic .card-image {
     width: 120%;
 }
 
 .happy .card-image {
-    width: 90%
+    width: 90%;
 }
-
-.calm .card-image {
-    background-color: #4973E4;
+.card-image img {
+    object-fit: contain;
+    size: 90%;
 }
 
 .helpline .card-image {
