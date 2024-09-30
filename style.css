@@ -149,7 +149,9 @@ ul {
     -webkit-transform: scale(1, 0.2);
 }
 
-
+.mascot-button {
+    border-color:#E3C8A8;
+}
 
 .content {
     height: 500px;
