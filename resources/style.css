@@ -152,10 +152,11 @@ h1 {
 .card {
     width: 220px;
     height: 300px;
-    border: solid 3px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     gap: 3px;
+    background-color: rgba(211,211,211,0.4);
 }
 
 .books .card,
@@ -181,7 +182,7 @@ h1 {
 
 .card-image {
     box-sizing: border-box;
-    border: solid 1px;
+    border-radius: 20px;
     height: 130px;
     display: flex;
     flex-shrink: 0;
@@ -241,6 +242,7 @@ h1 {
 }
 
 .card-link {
+    border-radius: 20px;
     align-self: flex-start;
     font-size: 14px;
 }
