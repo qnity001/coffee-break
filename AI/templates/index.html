@@ -1,165 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Gemini Query</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        #chat-container {
-            height: 80vh;
-            overflow-y: scroll;
-            padding: 10px;
-            border: 1px solid #ccc;
-            background-color: #f5f5f5;
-        }
-
-        .message {
-            margin-bottom: 10px;
-        }
-
-        .user-message {
-            text-align: right;
-            color: blue;
-        }
-
-        .ai-message {
-            text-align: left;
-            color: green;
-        }
-
-        #input-container {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            padding: 10px;
-        }
-
-        #query-input {
-            width: 80%;
-            padding: 5px;
-        }
-
-        #send-button {
-            padding: 5px 10px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-
-        .typing-indicator {
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background-color: #ccc;
-            margin: 0 2px;
-            animation: typing 1s infinite;
-        }
-
-        @keyframes typing {
-            0% {
-                opacity: 0;
-            }
-            50% {
-                opacity: 1;
-            }
-            100% {
-                opacity: 0;
-            }
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <div id="chat-container"></div>
-    <div id="input-container">
-        <input type="text" id="query-input" placeholder="Enter your query">
-        <button id="send-button">Send</button>
+    <div class="chat-container">
+        <div id="chat-box" class="chat-box">
+            <!-- Chat messages will appear here -->
+        </div>
+        <div class="input-box">
+            <input type="text" id="user-input" placeholder="Type your message here..." onkeydown="checkEnterKey(event)" />
+            <button onclick="sendMessage()">Send</button>
+        </div>
     </div>
 
-    <script>
-        const chatContainer = document.getElementById('chat-container');
-        const queryInput = document.getElementById('query-input');
-        const sendButton = document.getElementById('send-button');
-
-        sendButton.addEventListener('click', () => {
-            const query = queryInput.value;
-            if (query.trim() !== '') {
-                // Display the user's query in the chat container
-                const userMessage = document.createElement('div');
-                userMessage.classList.add('user-message');
-                userMessage.textContent = query;
-                chatContainer.appendChild(userMessage);
-                chatContainer.scrollTop = chatContainer.scrollHeight;
-
-                // Show typing indicator
-                const typingIndicator = document.createElement('div');
-                typingIndicator.classList.add('typing-indicator');
-                chatContainer.appendChild(typingIndicator);
-
-                // Disable input and button
-                sendButton.disabled = true;
-                queryInput.disabled = true;
-
-                // Send the query to your server
-                fetch('/query', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({ query: query })
-                })
-                .then(response => response.json())
-                .then(data => {
-                    // Remove typing indicator
-                    const aiMessage = document.createElement('div');
-                    aiMessage.classList.add('ai-message');
-
-                    if (data.response) {
-                        const words = data.response.split(' ');
-                        aiMessage.textContent = '';
-                        words.forEach((word, index) => {
-                            setTimeout(() => {
-                                if (index === 0) {
-                                    typingIndicator.remove();
-                                }
-                                aiMessage.append(word + ' ');
-                            }, index * 50);
-                        });
-                    } else {
-                        aiMessage.textContent = "Error: No response from AI.";
-                        typingIndicator.remove();
-                    }
-
-                    chatContainer.appendChild(aiMessage);
-                    chatContainer.scrollTop = chatContainer.scrollHeight;
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                })
-                .finally(() => {
-                    // Re-enable input and button
-                    sendButton.disabled = false;
-                    queryInput.disabled = false;
-                });
-
-                queryInput.value = '';
-            }
-        });
-
-        // Handle Enter key press
-        queryInput.addEventListener('keydown', (event) => {
-            if (event.keyCode === 13) {
-                sendButton.click();
-            }
-        });
-    </script>
+    <script src="/static/app.js"></script>
 </body>
 </html>
