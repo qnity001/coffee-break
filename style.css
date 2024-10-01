@@ -149,8 +149,13 @@ ul {
     -webkit-transform: scale(1, 0.2);
 }
 
-.mascot-button {
-    border-color:#E3C8A8;
+.mascot-text {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    font-size: 36px;
+    color: #EDE1D4;
+    font-weight: 500;
 }
 
 .content {
@@ -239,6 +244,14 @@ ul {
     color: #EDE1D4;
     margin-top: 10px;
     transition: background-color 0.3s;
+}
+
+.mascot-button {
+    cursor: pointer;
+    border-color:#E3C8A8;
+    background-color: #3E2723;
+    color: #EDE1D4;
+    margin-top: 30px;
 }
 
 .brew:hover {
