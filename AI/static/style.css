@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.chat-container {
+    width: 400px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.chat-box {
+    height: 300px;
+    padding: 10px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.input-box {
+    display: flex;
+    padding: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* User message styling */
+.user-message {
+    background-color: #d1e7dd;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    align-self: flex-end;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+/* Bot message styling */
+.bot-message {
+    background-color: #e2e3e5;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    align-self: flex-start;
+    max-width: 80%;
+    word-wrap: break-word;
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Fade-in effect for bot message */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
