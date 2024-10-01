@@ -156,7 +156,21 @@ ul {
     font-size: 36px;
     color: #EDE1D4;
     font-weight: 500;
+    animation: 2.3s fadeUp;
 }
+
+@keyframes fadeUp {
+    0% {
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+
 
 .content {
     height: 500px;
