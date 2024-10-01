@@ -207,6 +207,11 @@ ul {
     transform: scale(1.05);
 }
 
+.card:not(:hover) {
+    transition: transform 0.5s ease;
+    transform: scale(1);
+}
+
 .box {
     display:flex;
     justify-content: center;
