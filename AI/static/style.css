@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Playpen+Sans|Satisfy&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Playpen Sans', 'Times New Roman', sans-serif;
+    background-color: #E3C8A8;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    min-height: 100vh;
 }
 
 .chat-container {
