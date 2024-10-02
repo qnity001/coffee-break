@@ -142,7 +142,6 @@ button:hover {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    background-color: #037C6E;
     padding: 10px;
     margin: 5px 0;
     margin-right: 20px;
@@ -151,12 +150,26 @@ button:hover {
     min-width: 20%;
     word-wrap: break-word;
     align-self: flex-end;
+    gap: 5px;
 }
 
 
 .user-content {
+    min-width: 180px;
+    background-color: #059584;
+    align-self: flex-end;
     font-weight: bold;
     color: #EDE1D4;
+    text-align: right;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.user-name {
+    align-self: flex-end;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 3px;
 }
 
 .bot-message {
@@ -195,8 +208,7 @@ button:hover {
     gap: 5px;
 }
 
-.bot-name,
-.user-name {
+.bot-name {
     font-weight: bold;
     align-self: flex-start;
     font-size:20px;

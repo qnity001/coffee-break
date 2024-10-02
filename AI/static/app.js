@@ -33,10 +33,12 @@ function appendMessage(sender, message) {
     if (sender === 'You') {
        messageElement.classList.add('user-message'); 
 
+                
         const userName = document.createElement('div');
         userName.classList.add('user-name');
-        userName.innerHTML = "User";
+        userName.innerHTML = "You";
         messageElement.appendChild(userName);
+
         const userContent = document.createElement('div');
         userContent.classList.add('user-content');
         userContent.innerHTML = message;
