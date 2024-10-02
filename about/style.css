@@ -21,6 +21,17 @@ body {
     background-color: #3E2723;
 }
 
+.introduction,
+.team-container,
+.people-container {
+    width: 980px;
+    align-self: center;
+    flex: display;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .header {
     width: 1000px;
     align-self: center;
@@ -76,6 +87,28 @@ ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
+}
+
+
+
+.people-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    flex-wrap: wrap;
+}
+
+h2 {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.person {
+    width: 300px;
+    height: 400px;
+    background-color: #3E2723;
+    border: solid 3px black;
 }
 
 .footer {
