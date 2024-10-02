@@ -30,10 +30,47 @@ function appendMessage(sender, message) {
     const messageElement = document.createElement('div');
     messageElement.classList.add('message');
 
-    messageElement.innerHTML = `<strong>${sender}:</strong> ${message}`;
-    chatBox.appendChild(messageElement);
+    if (sender === 'You') {
+       messageElement.classList.add('user-message'); 
 
-    // Scroll to the bottom
+        const userName = document.createElement('div');
+        userName.classList.add('user-name');
+        userName.innerHTML = "User";
+        messageElement.appendChild(userName);
+        const userContent = document.createElement('div');
+        userContent.classList.add('user-content');
+        userContent.innerHTML = message;
+        messageElement.appendChild(userContent);
+
+    } else 
+    {
+        messageElement.classList.add('bot-message');
+
+        // div for avatar of the mascot
+        const botImage = document.createElement('div');
+        botImage.classList.add('bot-image');
+        botImage.innerHTML = "<img src=\"https://github.com/qnity001/coffee-break/blob/main/coffee/Mascot.png?raw=true\" alt=\"mascot\">";
+        messageElement.appendChild(botImage);
+
+        // div for the bot's text
+        const botText = document.createElement('div');
+        botText.classList.add('bot-text');
+        messageElement.appendChild(botText);
+
+        // div for bot's name
+        const botName = document.createElement('div');
+        botName.classList.add('bot-name');
+        botName.innerHTML = "Milo";
+        botText.appendChild(botName);
+
+        // div for bot's message
+        const botContent = document.createElement('div');
+        botContent.classList.add('bot-content');
+        botContent.innerHTML = message;
+        botText.appendChild(botContent);
+    }
+    
+    chatBox.appendChild(messageElement);
     chatBox.scrollTop = chatBox.scrollHeight;
 }
 // Function to check if the Enter key is pressed
