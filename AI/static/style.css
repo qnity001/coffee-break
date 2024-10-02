@@ -75,7 +75,7 @@ ul {
 
 
 .chat-container {
-    position: fixed;
+    position: absolute;
     margin: auto;
     width: 900px;
     min-height: 450px;
@@ -112,16 +112,25 @@ input[type="text"] {
 }
 
 button {
-    padding: 10px 15px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
+    box-sizing: border-box;
+    font-family: 'Playpen Sans', 'Times New Roman', Arial;
+    font-weight: bold;
+    padding: 8px 20px;
+    background-color: #3E2723;
+    border: solid 3px;
+    border-color: #3E2723;
+    color: #EDE1D4;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    
 }
 
 button:hover {
-    background-color: #45a049;
+    box-sizing: border-box;
+    background-color: #E3C8A8;
+    color: #3E2723;
+
 }
 
 /* User message styling */
