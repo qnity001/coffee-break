@@ -1,24 +1,97 @@
 @import url('https://fonts.googleapis.com/css?family=Playpen+Sans|Satisfy&display=swap');
 
 body {
-    font-family: 'Playpen Sans', 'Times New Roman', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #E3C8A8;
+    font-family: 'Playpen Sans', 'Times New Roman', Arial;
+}
+
+.header-container {
+    height: 70px;
+}
+
+.header-container,
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    background-color: #3E2723;
 }
 
+.header {
+    width: 1000px;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-family: 'Satisfy', Arial;
+    color: #EDE1D4;
+    font-weight: 100;
+    max-width: 40%;
+}
+
+.pic {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+}
+
+a {
+    color: #EDE1D4;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.logo img {
+    width: 20%;
+}
+
+.menu {
+    display: flex;
+    flex-shrink: 0;
+}
+
+ul {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 40px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
 .chat-container {
-    width: 400px;
-    background-color: white;
+    position: fixed;
+    margin: auto;
+    width: 900px;
+    min-height: 450px;
+    height: auto;
+    background-color: #C5A688;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .chat-box {
-    height: 300px;
+    height:450px;
     padding: 10px;
     overflow-y: auto;
     border-bottom: 1px solid #ddd;
@@ -26,6 +99,7 @@ body {
 
 .input-box {
     display: flex;
+    justify-content: flex-end;
     padding: 10px;
 }
 
@@ -79,4 +153,12 @@ button:hover {
     to {
         opacity: 1;
     }
+}
+
+.footer {
+    height: 50px;
+    margin-top: auto;
+    color: #EDE1D4;
+    font-weight: 500;
+    font-size: 14px;
 }
