@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css?family=Playpen+Sans|Satisfy&display=swap');
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #E3C8A8;
+    transition: background-color 1s ease;
+    font-family: 'Playpen Sans', 'Times New Roman', Arial;
+}
+
+.header-container {
+    height: 70px;
+}
+
+.header,
+.content {
+    width: 1000px;
+    align-self: center;
+}
+
+.header-container,
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3E2723;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-family: 'Satisfy', Arial;
+    font-size: 32px;
+    color: #EDE1D4;
+    font-weight: 100;
+    max-width: 40%;
+}
+
+.pic {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: #EDE1D4;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    width: 20%;
+}
+
+.menu {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.menu a {
+    font-size: 20px;
+}
+
+ul {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 40px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.mascot-container {
+    height: 550px;
+    background-color: #3E2723;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.yes-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.mascot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    flex-shrink: 0;
+}
+
+.mascot img {
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Animation for mascot */
+
+.mascot {
+    -webkit-animation: action 2.5s infinite alternate;
+    animation: action 2.5s infinite alternate;
+}
+
+@-webkit-keyframes action {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(40px);
+    }
+}
+
+@keyframes action {
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(40px);
+    }
+}
+
+/* Creating a shadow */
+
+.shadow {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background: whitesmoke;
+    opacity: 0.5;
+    -webkit-filter: blur(10px);
+    -webkit-transform: scale(1, 0.2);
+}
+
+.mascot-text {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    font-size: 36px;
+    color: #EDE1D4;
+    font-weight: 500;
+    animation: 2.3s fadeUp;
+}
+
+@keyframes fadeUp {
+    0% {
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.content {
+    height: 500px;
+    margin: 150px 0px;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    color:#3E2723;
+    font-weight: 500;
+    gap: 30px;
+}
+
+.coffee {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    transition: color 1s ease;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 280px;
+    min-height: 240px;
+}
+
+.card:hover {
+    transition: transform 0.8s ease;
+    transform: scale(1.05);
+}
+
+.card:not(:hover) {
+    transition: transform 0.5s ease;
+    transform: scale(1);
+}
+
+.box {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    max-width: 100px;
+    max-height: 180px;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
+
+.box img {
+    width: 120%;
+    object-fit: fill;
+    align-self: center;
+    padding-left: 12px;
+}
+
+.mocha img,
+.espresso img {
+    width: 115%;
+}
+
+.caption {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.subtext {
+    font-size: 18px;
+    font-weight: 500;
+    align-self: center;
+}
+
+.brew {
+    font-family: 'Playpen Sans';
+    box-sizing: border-box;
+    border-radius: 40px;
+    border: solid 3px;
+    border-color: #3E2723;
+    flex-shrink: 0;
+    font-weight: bold;
+    padding: 5px 30px;
+    align-self: center;
+    font-size: 22px;
+    background: #3E2723;
+    color: #EDE1D4;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.mascot-button {
+    cursor: pointer;
+    border-color:#E3C8A8;
+    background-color: #3E2723;
+    color: #EDE1D4;
+    margin-top: 30px;
+}
+
+.brew:hover {
+    cursor: pointer;
+    background-color: #E3C8A8;
+    color: #3E2723;
+}
+
+.footer {
+    height: 50px;
+    margin-top: auto;
+    color: #EDE1D4;
+    font-weight: 500;
+    font-size: 14px;
+}
