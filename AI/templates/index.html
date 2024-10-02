@@ -29,14 +29,19 @@
     </div>
 
     
-    <div class="chat-container">
-        <div id="chat-box" class="chat-box">
-            <!-- Chat messages will appear here -->
+        <div class="chat-container">
+            <div id="chat-box" class="chat-box">
+                
+            </div>
+            <div class="input-box">
+                <input type="text" id="user-input" placeholder="Type your message here..." onkeydown="checkEnterKey(event)" />
+                <button onclick="sendMessage()">Send</button>
+            </div>
         </div>
-        <div class="input-box">
-            <input type="text" id="user-input" placeholder="Type your message here..." onkeydown="checkEnterKey(event)" />
-            <button onclick="sendMessage()">Send</button>
-        </div>
+    
+
+    <div class="footer">
+        Copyright &copy Doctor Binary 2024
     </div>
 </body>
 </html>
