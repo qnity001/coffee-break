@@ -41,10 +41,15 @@ def save_history(history):
     with open(DATA_FILE, 'w') as file:
         json.dump(history, file, indent=4)
 
-# Route for the homepage
+# Route for the landing page
 @app.route('/')
-def index():
-    return render_template('index.html')
+def landing():
+    return render_template('index.html')  # This is your landing page with the Chat button
+
+# Route for the chatbot page
+@app.route('/chat')
+def chat():
+    return render_template('bot.html')  # This is the chatbot page (index.html)
 
 # Route to get a response from Gemini AI with global history stored in data.json
 @app.route('/get_response', methods=['POST'])
