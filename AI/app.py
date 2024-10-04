@@ -23,10 +23,6 @@ system_instruction = load_system_instruction('system_instruction.txt')
 
 # Route for the homepage
 @app.route('/')
-def landing():
-    return render_template('index.html')
-
-@app.route('/chat')
 def chat():
     return render_template('Chat.html')
 
