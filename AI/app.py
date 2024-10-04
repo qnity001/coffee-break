@@ -98,4 +98,4 @@ def get_response():
     return jsonify({'response': response_text, 'history': conversation_history})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
