@@ -1,18 +1,1 @@
-[
-    {
-        "role": "user",
-        "parts": [
-            {
-                "text": "hihi"
-            }
-        ]
-    },
-    {
-        "role": "model",
-        "parts": [
-            {
-                "text": "Hey there! I\u2019m Milo, your friendly mental health companion \ud83d\ude0a What\u2019s your name? \n"
-            }
-        ]
-    }
-]
+[]
