@@ -24,7 +24,7 @@ system_instruction = load_system_instruction('system_instruction.txt')
 # Route for the homepage
 @app.route('/')
 def chat():
-    return render_template('Chat.html')
+    return render_template('bot.html')
 
 # Route to get a response from Gemini AI
 @app.route('/get_response', methods=['POST'])
