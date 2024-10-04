@@ -8,7 +8,7 @@ function sendMessage() {
     appendMessage('You', message);
 
     // Send the message to the Flask backend
-    fetch('/get_response', {
+    fetch('http://127.0.0.1:5000/get_response', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
