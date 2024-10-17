@@ -2,7 +2,7 @@ function sendMessage() {
     const userInput = document.getElementById('user-input');
     const message = userInput.value.trim();
 
-    if (message === "") return;
+    if (message === "") return; // Do nothing if the message is empty
 
     // Display the user's message in the chatbox
     appendMessage('You', message);
@@ -17,13 +17,18 @@ function sendMessage() {
     })
     .then(response => response.json())
     .then(data => {
-        // Display the chatbot's response
-        appendMessage('Bot', data.response);
+        // Display the chatbot's response with a typing effect
+        displayBotMessage(data.response);
+    })
+    .catch(error => {
+        // Display error in case the fetch fails
+        appendMessage('Bot', 'Error: ' + error.message);
     });
 
     // Clear the input box
     userInput.value = "";
 }
+
 
 function appendMessage(sender, message) {
     const chatBox = document.getElementById('chat-box');
@@ -99,5 +104,6 @@ function displayBotMessage(message) {
 
         // Scroll the chat box to the bottom to display the latest message
         chatBox.scrollTop = chatBox.scrollHeight;
-    }, 100); // Adjust speed (100ms per letter)
+    }, 50); // Adjust speed (50ms per letter for a smoother effect)
 }
+
