@@ -68,7 +68,7 @@ def get_response():
     }
 
     model = genai.GenerativeModel(
-        model_name="gemini-1.5-pro",
+        model_name="gemini-2.5-pro",
         generation_config=generation_config,
         system_instruction=system_instruction,  # Load the instruction from the file
         tools='code_execution',
@@ -101,3 +101,4 @@ def get_response():
 
 if __name__ == '__main__':
     app.run()
+
